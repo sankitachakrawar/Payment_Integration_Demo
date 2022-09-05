@@ -1,10 +1,11 @@
 package com.pay.service;
 
-import com.pay.entities.OrderEntity;
+import java.math.BigInteger;
+
 import com.razorpay.Order;
 
 public interface PayService {
-	
-	public Order payment(OrderEntity order) throws Exception;
+
+	Order createRazorPayOrder(BigInteger amount) throws Exception;
 
 }
